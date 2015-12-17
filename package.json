@@ -21,5 +21,11 @@
   "bugs": {
     "url": "https://github.com/xcatliu/gh-stars/issues"
   },
-  "homepage": "http://gh-stars.com"
+  "homepage": "http://gh-stars.com",
+  "devDependencies": {
+    "babel-eslint": "^5.0.0-beta6",
+    "eslint": "^1.10.3",
+    "eslint-config-airbnb": "^2.1.1",
+    "eslint-plugin-react": "^3.11.3",
+  }
 }
