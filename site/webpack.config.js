@@ -1,11 +1,20 @@
 const path = require('path');
 
 module.exports = {
-  context: path.resolve(__dirname, 'src'),
-  entry: './app',
+  entry: './src/app.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'app.js',
+    filename: 'bundle.js',
   },
+  debug: true,
   devtool: 'source-map',
+  module: {
+    loaders: [
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        loader: 'babel-loader',
+      },
+    ],
+  },
 };

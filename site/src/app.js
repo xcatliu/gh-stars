@@ -1,2 +1,3 @@
-debugger;
-alert('Hello World');
+import alertHelloWorld from './alert';
+
+alertHelloWorld();
